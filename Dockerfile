@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -11,7 +11,7 @@ COPY package*.json ./
 
 RUN npm install express ejs superagent --save
 
-ENV BACKEND_URL=10.0.3.4:3000
+
 
 
 # Bundle app source
